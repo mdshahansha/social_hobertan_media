@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+ 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MERN Social Media APP  
+*React / Express / MongoDB / Redux*
 
-## Available Scripts
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
-In the project directory, you can run:
+Final project of the Holberton school. This is a social network based on the MERN stack: MongoDb, Express, React, Node.js
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Install an instance of a React project:
+```bash
+npx create-react-app simple-react-app
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+Install the `package.json` dependencies in the root of the project and in `/client` with the following command:
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend Configuration:
 
-### `npm run build`
+1. Add your cluster information in `/config/db.js`.
+2. Create the `.env` file in `/config/` with the following content:
+   ```bash
+   PORT=5000
+   CLIENT_URL=http://localhost:3000
+   DB_USER_PASS=id:password
+   TOKEN_SECRET=990bf68e6adf1be5f1671bba3bec692056922454
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend Configuration:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Create an `.env` file in the root of the frontend (`/client`) with the following content:
+   ```bash
+   REACT_APP_API_URL=http://localhost:5000/
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Getting Started
 
-### `npm run eject`
+1. Start the backend server:
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Start the frontend:
+   ```bash
+   cd client
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built With
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Backend:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **MongoDB**: MongoDB is a schema-less NoSQL document database. It stores JSON documents and allows for flexibility in structure.
+  
+- **Mongoose**: Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It helps with schema validation and translating data between MongoDB and your app.
 
-## Learn More
+- **Nodemon**: A tool for automatically restarting the Node.js application when files change during development.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Bcrypt**: A library for hashing passwords securely.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Body-parser**: Middleware for parsing incoming request bodies, used to populate `req.body`.
 
-### Code Splitting
+- **Cookie-parser**: Middleware to parse cookies and make them accessible via `req.cookies`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Dotenv**: A module that loads environment variables from a `.env` file into `process.env`, following The Twelve-Factor App methodology.
 
-### Analyzing the Bundle Size
+- **Express**: A minimalist web framework for Node.js to build APIs and handle HTTP requests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Jsonwebtoken (JWT)**: A method for securely transmitting information between two parties as a JSON object.
 
-### Making a Progressive Web App
+- **Validator**: A library for string validation and sanitization.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Frontend:
 
-### Advanced Configuration
+- **React**: A JavaScript library for building user interfaces using a component-based architecture.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Redux**: A state management library to manage and centralize the application's state.
 
-### Deployment
+- **Dart SASS**: A stylesheet preprocessor to compile `.scss` files into CSS.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Author
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **[Mohammad Shahansha](https://www.linkedin.com/in/mohammad-shahansha-042226193/)** _alias_ [@mdshahansha](https://github.com/mdshahansha/test01) on Github 
+--- 
